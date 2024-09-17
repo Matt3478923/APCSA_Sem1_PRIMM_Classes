@@ -1,13 +1,13 @@
 /**
  * Driver class for the shapes
- * @author
+ * @author Matthew
  * @version 1.0
- * @since 2024-09
+ * @since 2024-09-16
  */
 
 
 class ShapeDriver {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Square sq1 = new Square();
 

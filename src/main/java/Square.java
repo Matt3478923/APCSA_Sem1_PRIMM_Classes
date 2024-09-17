@@ -1,8 +1,8 @@
 /**
  * Implements a class that encapsulates data and methods for representing a square
- * @author 
+ * @author Matthew
  * @version 1.0
- * @since 2024-09-
+ * @since 2024-09-16
  */
 
 class Square {
@@ -13,8 +13,7 @@ class Square {
     private double perimeter = 4.0;
 
         /** The area of the square **/
-        // TODO: add an instance variable for area
-    
+    private double area = 1.0;
 
     /**
      * Constructor

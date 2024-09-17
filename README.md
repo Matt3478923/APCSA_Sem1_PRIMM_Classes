@@ -29,10 +29,10 @@ it can help supplement your notes.
 ## Run
 Run the program.
 1. What is the output?
-   > your answer
+   > Side: 1.00
 
 2. Did your prediction agree with the output? Explain where it may have differed.
-   > your answer
+   > Yes it mostly did, i missed the `Side: ` in it but overall pretty close
 
 ## Investigate
 In this section, your instructor will alternate between explaining topics and tackling a `TODO` in the Modify section.
