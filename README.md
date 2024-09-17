@@ -12,35 +12,35 @@ it can help supplement your notes.
 **Without running the program**, predict what its behavior is.
 
 1. What will the program output when it is run?
-    >  your answer
+   >  1.00
 
 2. What do you think the words `public` and `private` mean?
-    > your answer
+   > Where the variable can be accessed
 
-3. How are the files `ShapeDriver.java` and `Square.java` related? 
-    > your answer
+3. How are the files `ShapeDriver.java` and `Square.java` related?
+   > ShapeDriver calls Square
 
-4. There is no method definition for `Square()`. Do you think the code will compile? 
-    > your answer
+4. There is no method definition for `Square()`. Do you think the code will compile?
+   > I think it will run because it is a class instead of a method being run
 
-5. Why do the methods/functions `getSide()` and `setSide()` exist? 
-    > your answer
+5. Why do the methods/functions `getSide()` and `setSide()` exist?
+   > Because the side length variable cannot be directly referenced or accessed
 
 ## Run
-Run the program. 
+Run the program.
 1. What is the output?
-    > your answer
+   > your answer
 
 2. Did your prediction agree with the output? Explain where it may have differed.
-    > your answer
+   > your answer
 
 ## Investigate
 In this section, your instructor will alternate between explaining topics and tackling a `TODO` in the Modify section.
 Make sure you take careful notes on the major topics.
 
 ## Modify
-Starting with the `Square.java` file, resolve each of the `TODO` items. 
-Once you have resolved a `TODO`, make sure to remove the text `TODO` so it doesn't 
+Starting with the `Square.java` file, resolve each of the `TODO` items.
+Once you have resolved a `TODO`, make sure to remove the text `TODO` so it doesn't
 appear on the list.
 
 When it comes time to creating your own Unfied Markup Language visual for your custom class,
