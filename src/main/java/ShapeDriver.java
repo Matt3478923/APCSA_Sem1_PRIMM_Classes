@@ -9,24 +9,34 @@
 class ShapeDriver {
     public static void main(String[] args) {
 
-        Square sq1 = new Square();
+        Square sq1 = new Square(1.0);
 
         System.out.printf("Side: %.2f\n", sq1.getSide());
-        // TODO: Print out perimeter, area
+        System.out.printf("Area: %.2f\n", sq1.getArea());
+        System.out.printf("Perimeter: %.2f\n", sq1.getPerimeter());
+
+        sq1.setSide(5);
+        System.out.printf("Side: %.2f\n", sq1.getSide());
+        System.out.printf("Area: %.2f\n", sq1.getArea());
+        System.out.printf("Perimeter: %.2f\n", sq1.getPerimeter());
+
+        sq1.setPerimeter(10);
+        System.out.printf("Side: %.2f\n", sq1.getSide());
+        System.out.printf("Area: %.2f\n", sq1.getArea());
+        System.out.printf("Perimeter: %.2f\n", sq1.getPerimeter());
+
+        sq1.setArea(100);
+        System.out.printf("Side: %.2f\n", sq1.getSide());
+        System.out.printf("Area: %.2f\n", sq1.getArea());
+        System.out.printf("Perimeter: %.2f\n", sq1.getPerimeter());
 
 
-        // TODO: Change the side length
-        // TODO: Print out side length, perimeter, area
 
-        // TODO: Change the perimeter
-        // TODO: Print out side length, perimeter, area
-
-        // TODO: Change the area
-        // TODO: Print out side length, perimeter, area
-
-        // TODO: After implementing a constructor that takes a side length
         // create a new square with side length 4.5
-        // TODO: Print out side length, perimeter, area
+        Square sq2 = new Square(4.5);
+        System.out.printf("Side: %.2f\n", sq2.getSide());
+        System.out.printf("Area: %.2f\n", sq2.getArea());
+        System.out.printf("Perimeter: %.2f\n", sq2.getPerimeter());
 
 
         // TODO: After implementing a new shape of your choosing

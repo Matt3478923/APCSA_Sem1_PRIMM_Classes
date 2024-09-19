@@ -5,6 +5,8 @@
  * @since 2024-09-16
  */
 
+import static java.lang.Math.sqrt;
+
 class Square {
         /** The side length of the square **/
     private double side = 1.0;
@@ -17,50 +19,63 @@ class Square {
 
     /**
      * Constructor
-     * @param side double representing the side length. Assumes positive non-zero 
+     * @param s double representing the side length. Assumes positive non-zero
      */
-        // TODO: add a constructor that takes a side length
-
+    public Square(double s) {
+        this.side = s;
+    }
 
     /**
      * Gets side length
      * @return double representing side
      */
     public double getSide() {
-        return side;
+        return this.side;
     }
 
     /**
      * Gets perimeter
      * @return double representing perimeter
      */
-    // TODO: implement getter for perimeter
+    public double getPerimeter() { return this.perimeter; }
+
 
     /**
      * Gets area
      * @return double representing area
      */
-    // TODO: implement getter for area
+    public double getArea() { return this.area; }
+
 
     /**
      * Sets side length. Perimeter and area are updated
-     * @param s double representing the new side length.
+     * @param side double representing the new side length.
      */
-    public void setSide(double s) {
-        side = s;
-        perimeter = 4 * side; // calculate perimeter
-        // TODO: calculate the area
+    public void setSide(double side) {
+        this.side = side;
+        this.perimeter = 4 * side; // calculate perimeter
+        this.area = side * side;
     }
 
     /**
      * Sets area. Perimeter and side length are updated
+     * @param perimeter double representing the new perimeter
      */
-    // TODO: implement - you will need to import java.lang.Math to use sqrt() method
+    public void setPerimeter(double perimeter) {
+        this.perimeter = perimeter;
+        this.side = perimeter/4;
+        this.area = this.side * this.side;
+    }
 
 
     /**
      * Sets perimeter. Area and side length are updated
+     * @param area double representing the new area
      */
-    // TODO: implement - you will need to import java.lang.Math to use sqrt() method
+    public void setArea(double area) {
+        this.area = area;
+        this.side = sqrt(area);
+        this.perimeter = this.side * 4;
+    }
 
 }
