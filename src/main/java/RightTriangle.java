@@ -20,9 +20,9 @@ public class RightTriangle {
     private double area;
 
     /**
-     *
-     * @param side1
-     * @param side2
+     * Creates a right triangle with side1 length and side2 length, calculates hypotenuse, perimeter, area.
+     * @param side1 double representing new side 1
+     * @param side2 double representing new side 2
      */
     public RightTriangle(double side1, double side2) {
         this.side1 = side1;
@@ -63,9 +63,9 @@ public class RightTriangle {
     public double getHypotenuse() { return this.hypotenuse; }
 
     /**
-     * Sets the side1 length, and side2 length, and hypotenuse length, and area. Perimeter, area, hypotenuse, side1, side2 are updated.
-     * @param side1
-     * @param side2
+     * Sets the side1 length, and side2 length. Perimeter, area, and hypotenuse are updated.
+     * @param side1 double representing new side 1
+     * @param side2 double representing new side 2
      */
     public void setSides(double side1, double side2) {
         this.side1 = side1;
@@ -76,9 +76,9 @@ public class RightTriangle {
     }
 
     /**
-     * Sets the side1 length, and side2 length, and hypotenuse length, and area. Perimeter, area, hypotenuse, side1, side2 are updated.
-     * @param side1
-     * @param hypotenuse
+     * Sets the side1 length, and hypotenuse length. Perimeter, area, and side2 are updated.
+     * @param side1 double representing new side 1
+     * @param hypotenuse double representing new hypotenuse
      */
     public void setSide1AndHypotenuse(double side1, double hypotenuse) {
         this.side1 = side1;
@@ -89,9 +89,9 @@ public class RightTriangle {
     }
 
     /**
-     * Sets the side1 length, and side2 length, and hypotenuse length, and area. Perimeter, area, hypotenuse, side1, side2 are updated.
-     * @param side2
-     * @param hypotenuse
+     * Sets the side2 length, and hypotenuse length. Perimeter, area, and side1 are updated.
+     * @param side2 double representing new side 2
+     * @param hypotenuse double representing new hypotenuse
      */
     public void setSide2AndHypotenuse(double side2, double hypotenuse) {
         this.side2 = side2;
@@ -103,27 +103,27 @@ public class RightTriangle {
 
     /**
      * Sets the side1 length, and area. Perimeter, hypotenuse, and side2 are updated.
-     * @param side1
-     * @param area
+     * @param side1 double representing new side 1
+     * @param area double representing new area
      */
     public void setAreaAndSide1(double side1, double area) {
         this.side1 = side1;
         this.area = area;
         this.side2 = area/2/side1;
-        this.hypotenuse = sqrt(side1 * side1 + side2 * side2);
+        this.hypotenuse = sqrt(side1 * side1 + this.side2 * this.side2);
         this.perimeter = side1 + this.side2 + this.hypotenuse;
     }
 
     /**
      * Sets the side2 length, and area. Perimeter, hypotenuse, and side1 are updated.
-     * @param side2
-     * @param area
+     * @param side2 double representing new side 2
+     * @param area double representing new area
      */
     public void setAreaAndSide2(double side2, double area) {
         this.side2 = side2;
         this.area = area;
         this.side1 = area/2/side2;
-        this.hypotenuse = sqrt(side1 * side1 + side2 * side2);
+        this.hypotenuse = sqrt(this.side1 * this.side1 + side2 * side2);
         this.perimeter = this.side1 + side2 + this.hypotenuse;
     }
 }
