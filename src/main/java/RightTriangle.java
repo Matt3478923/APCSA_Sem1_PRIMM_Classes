@@ -109,7 +109,7 @@ public class RightTriangle {
     public void setAreaAndSide1(double side1, double area) {
         this.side1 = side1;
         this.area = area;
-        this.side2 = area/2/side1;
+        this.side2 = area / 2 * side1;
         this.hypotenuse = sqrt(side1 * side1 + this.side2 * this.side2);
         this.perimeter = side1 + this.side2 + this.hypotenuse;
     }
@@ -122,7 +122,7 @@ public class RightTriangle {
     public void setAreaAndSide2(double side2, double area) {
         this.side2 = side2;
         this.area = area;
-        this.side1 = area/2/side2;
+        this.side1 = area / (side2 / 2);
         this.hypotenuse = sqrt(this.side1 * this.side1 + side2 * side2);
         this.perimeter = this.side1 + side2 + this.hypotenuse;
     }
